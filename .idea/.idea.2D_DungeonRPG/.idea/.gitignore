@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/projectSettingsUpdater.xml
+/modules.xml
+/.idea.2D_DungeonRPG.iml
+# Datasource local storage ignored files
+/../../../../../../:\Unity_2D_RPG\2D_DungeonRPG\.idea\.idea.2D_DungeonRPG\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

@@ -109,11 +109,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorByStates:
   - stateType: 0
-    color: {r: 0, g: 0.03163153, b: 0.1981132, a: 1}
+    color: {r: 0.49411768, g: 0.1254902, b: 0.1254902, a: 1}
   - stateType: 1
-    color: {r: 0.10946956, g: 0.17644176, b: 0.5660378, a: 0}
+    color: {r: 0.12549022, g: 0.49411765, b: 0.28058454, a: 0}
   - stateType: 2
-    color: {r: 0.28123888, g: 0.33354166, b: 0.754717, a: 0}
+    color: {r: 0, g: 0.2830189, b: 0.028549165, a: 0}
   currentState: 0
 --- !u!114 &329846364114064037
 MonoBehaviour:

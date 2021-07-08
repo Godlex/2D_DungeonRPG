@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -149,6 +150,19 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1fbe7b6091dcf648806432e92d6a6f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -200,11 +214,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 250, y: 250, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!850595691 &1304722586
 LightingSettings:
@@ -358,7 +372,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1774795421
 GameObject:
@@ -370,6 +384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1774795422}
   - component: {fileID: 1774795423}
+  - component: {fileID: 1774795424}
   m_Layer: 0
   m_Name: FieldGenerator
   m_TagString: Untagged
@@ -389,7 +404,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1774795423
 MonoBehaviour:
@@ -403,5 +418,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b371e4ae6c549958ad07c09b3db5b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  randomizeSeed: 1
-  config: {fileID: 11400000, guid: 67c8498088ecf4144b78ac329c7eb109, type: 2}
+  Camera: {fileID: 519420028}
+  randomizeSeed: 0
+  chunkSize: 16
+  config: {fileID: 11400000, guid: d5a200457cebc4b4eb30dbefe23f4c31, type: 2}
+  Player: {fileID: 7160352266709554159, guid: 94a8f0ede381f1640ba6d8dd5facf052, type: 3}
+  Enemy: {fileID: 7811054970633990957, guid: 62e6318c2060cdd4f85890339c968721, type: 3}
+  EartCloneTile: {fileID: 0}
+  SpawnRate: 20
+--- !u!114 &1774795424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774795421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 929e8d25238cfaf4c80cb5c975cc3543, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 519420031}
+  mapManager: {fileID: 1774795423}
+  offset: {x: 0.5, y: 0.5}
+  highlightColor: {r: 0.60420346, g: 0.9245283, b: 0.48406905, a: 0}

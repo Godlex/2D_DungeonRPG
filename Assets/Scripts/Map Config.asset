@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7520ade468264249832a225c2dcdd186, type: 3}
+  m_Name: Map Config
+  m_EditorClassIdentifier: 
+  seed: -983557681
+  maxIterations: 1000
+  tileEarthPrefab: {fileID: 6345970372837532299, guid: 2bb423868d58fcb4dbe32c7716325eb5,
+    type: 3}
+  tileWallPrefab: {fileID: 8138420226408611956, guid: ea87dbf1902be404f984b9ae1c08509e,
+    type: 3}
+  maxMapWidth: 500
+  maxMapHeight: 500
+  maxWalkers: 3
+  keepLastWalker: 1
+  chanceWalkerChangeDirection: 0.5
+  chanceWalkerSpawn: 0.01
+  chanceWalkerDestroy: 0.01
+  percentToFill: 0.01
+  colorsByIds:
+  - {r: 1, g: 1, b: 1, a: 0}
+  - {r: 0.8784314, g: 0.34181246, b: 0.24313723, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}

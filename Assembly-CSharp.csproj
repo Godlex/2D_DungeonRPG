@@ -52,11 +52,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Controller\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Generation\Classes\MapGenerator.cs" />
+     <Compile Include="Assets\Scripts\Controller\CustomCameraController.cs" />
+     <Compile Include="Assets\Scripts\Controller\HighlightTileController.cs" />
+     <Compile Include="Assets\Scripts\Generation\Scriptables\MapConfig.cs" />
      <Compile Include="Assets\Scripts\Generation\Classes\Walker.cs" />
      <Compile Include="Assets\Scripts\Generation\MapManager.cs" />
-     <Compile Include="Assets\Scripts\Generation\Scriptables\MapConfig.cs" />
-     <Compile Include="Assets\Scripts\Controller\HighlightTileController.cs" />
      <None Include="Assets\Materials\UnlitColor.shader" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
